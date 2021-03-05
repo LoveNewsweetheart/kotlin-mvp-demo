@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-cache-path
+        name="update"
+        path="hm-update" />
+
+    <external-cache-path
+        name="picture"
+        path="putInStoragePhoto" />
+
+</paths>

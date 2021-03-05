@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/common_bg"
+    android:layout_height="match_parent">
+
+    <com.xinhuan.wms.demo.provider.widgets.HeaderBar
+        android:id="@+id/mHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="修改密码"/>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="0dp">
+
+
+      <LinearLayout
+          android:background="@color/common_white"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_marginBottom="1px"
+          android:orientation="horizontal"
+
+          android:paddingLeft="@dimen/common_padding_large"
+          android:paddingRight="@dimen/common_padding_large"
+          android:layout_height="@dimen/common_item_height">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/text_light_dark"
+              android:textSize="@dimen/text_middle_size"
+              android:text="验证码："/>
+          <EditText
+              android:id="@+id/mEditCheckCode"
+              android:gravity="left|center_vertical"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:background="@color/common_white"
+              android:textSize="@dimen/text_middle_size"
+              android:textColor="@color/text_light_dark"
+              android:textColorHint="#CCCCCC"
+              android:inputType="number"
+              android:hint="请输入验证码"
+              />
+
+          <View
+              android:layout_marginLeft="4dp"
+              android:layout_marginRight="@dimen/common_padding"
+              android:layout_width="1dp"
+              android:layout_height="20dp"
+              android:background="#EEEEEE"/>
+
+          <TextView
+              android:id="@+id/mTvSendCheckCode"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:textSize="@dimen/text_small_size"
+              android:textColor="@color/common_blue"
+              android:text="获取验证码"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:background="@color/common_white"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_marginBottom="1px"
+          android:orientation="horizontal"
+          android:paddingLeft="@dimen/common_padding_large"
+          android:paddingRight="@dimen/common_padding_large"
+          android:layout_height="@dimen/common_item_height">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/text_light_dark"
+              android:textSize="@dimen/text_middle_size"
+              android:text="新密码："/>
+          <EditText
+              android:id="@+id/mEdtNewPwd1"
+              android:gravity="left|center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_white"
+              android:textSize="@dimen/text_middle_size"
+              android:textColor="@color/text_light_dark"
+              android:textColorHint="#CCCCCC"
+              android:inputType="numberPassword|number"
+              android:maxLength="8"
+              android:hint="请输入8位数字的密码"
+              />
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:background="@color/common_white"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_marginBottom="1px"
+          android:orientation="horizontal"
+          android:paddingLeft="@dimen/common_padding_large"
+          android:paddingRight="@dimen/common_padding_large"
+          android:layout_height="@dimen/common_item_height">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/text_light_dark"
+              android:textSize="@dimen/text_middle_size"
+              android:text="确认密码："/>
+          <EditText
+              android:id="@+id/mEdtNewPwd2"
+              android:gravity="left|center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_white"
+              android:textSize="@dimen/text_middle_size"
+              android:textColor="@color/text_light_dark"
+              android:textColorHint="#CCCCCC"
+              android:inputType="numberPassword|number"
+              android:maxLength="8"
+              android:hint="请再次输入新密码"
+              />
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+    <Button
+        android:id="@+id/mBtnConfirm"
+        android:layout_margin="@dimen/common_padding"
+        android:text="确认修改"
+       style="@style/FullBtnStyleSemicircle"/>
+
+</LinearLayout>

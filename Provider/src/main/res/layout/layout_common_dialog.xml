@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/WrapWrap.SizeMiddle.ColorNormal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_top_corner_bg"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/SizeMiddle.ColorNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:gravity="center"
+        android:maxHeight="500dp"
+        android:minHeight="90dp"
+        android:paddingRight="48dp"
+        android:paddingLeft="48dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:textColor="#000000"
+        tools:text="大数据按开发的时间阿凡达时间啊孤苦伶仃撒分给的数据埃里克范德萨t" />
+
+    <View style="@style/DividerFixedHeight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_bottom_corner_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLeft"
+            style="@style/AutoWrap.SizeMiddle.ColorNormal"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_bottom_left_corner_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            tools:text="取消" />
+
+        <View
+            android:id="@+id/btnDivider"
+            style="@style/DividerFixedWidth" />
+
+        <TextView
+            android:id="@+id/tvRight"
+            style="@style/AutoWrap.SizeMiddle.ColorNormal"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_bottom_right_corner_bg"
+            android:gravity="center"
+            android:textColor="@color/common_blue"
+            tools:text="确认" />
+    </LinearLayout>
+</LinearLayout>

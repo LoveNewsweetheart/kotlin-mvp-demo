@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="boxColor1">#FFDDDD</color>
+    <color name="boxColor2">#E2EEFB</color>
+    <color name="boxColor3">#FEF5B8</color>
+    <color name="boxColor4">#FFF0E1</color>
+    <color name="boxColor5">#CAFDCD</color>
+    <color name="boxColor6">#B2FCFE</color>
+    <color name="boxColor7">#A9FFF2</color>
+    <color name="boxColor8">#FFCCB2</color>
+    <color name="boxColor9">#E4D0FF</color>
+    <color name="boxColor10">#F2F2F2</color>
+
+</resources>

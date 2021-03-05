@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="version_upgrade">立即升级</string>
+    <string name="version_cancel">取消</string>
+    <string name="version_exit">退出</string>
+    <string name="version_title">版本更新</string>
+    <string name="version_ensure">确定</string>
+    <string name="version_tips">%1$s \n\n请前往 设置-检测更新 进行手动下载 或切换到Wi-Fi，程序即可自动执行更新</string>
+    <string name="version_force">发现新版本</string>
+    <string name="version_tips1">正在下载新版本，请耐心等待</string>
+    <string name="version_permission_tip">安装应用需要打开未知来源权限，请去设置中开启权限</string>
+    <string name="version_error">提醒</string>
+    <string name="version_errorContent">下载过程出错，是否重试？</string>
+    <string name="version_again">重试</string>
+    <string name="cobub_1">新版本升级</string>
+    <string name="cobub_2">更新内容:</string>
+    <string name="cobub_3">[%1$s]</string>
+    <string name="cobub_4">残忍拒绝</string>
+    <string name="cobub_5">立即升级</string>
+    <string name="default_dialog_1">确定</string>
+    <string name="default_dialog_2">取消</string>
+    <string name="version_hpt_1">下次更新</string>
+    <string name="version_hpt_2">残忍退出</string>
+</resources>

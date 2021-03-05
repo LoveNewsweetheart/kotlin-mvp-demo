@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/common_white"
+        app:cardCornerRadius="@dimen/common_radius"
+        android:outlineAmbientShadowColor="#F8F8F8"
+        android:outlineSpotShadowColor="#FCF8F8"
+        app:cardMaxElevation="0dp"
+        app:cardElevation="6dp">
+
+        <TextView
+            android:id="@+id/mTvContent"
+            style="@style/WrapWrap.SizeMiddle.ColorLightDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_corner_all_bg_whiter_stroke_gray"
+            android:gravity="center"
+            android:textColor="@color/text_light_dark"
+            tools:text="北京D02" />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

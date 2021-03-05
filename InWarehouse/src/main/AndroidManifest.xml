@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xinhuan.wms.inwarehouse">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <!--注册商品验收Activity-->
+        <activity android:name=".ui.activity.InCheckActivity"/>
+
+    </application>
+</manifest>

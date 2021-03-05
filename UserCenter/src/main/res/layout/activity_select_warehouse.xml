@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mMultiStateView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_marginTop="68dp"
+           android:layout_marginLeft="33dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/text_light_dark"
+           android:textStyle="bold"
+           android:textSize="@dimen/text_large_size"
+           android:text="请确认仓库"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/mRv"
+           android:layout_marginTop="21dp"
+           android:layout_marginBottom="10dp"
+           style="@style/commonRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="0dp"/>
+
+
+       <Button
+           android:id="@+id/mBtnConfirm"
+           android:layout_marginLeft="@dimen/common_padding_big"
+           android:layout_marginTop="@dimen/common_padding_big"
+           android:layout_marginRight="@dimen/common_padding_big"
+           android:layout_marginBottom="@dimen/common_padding"
+           android:text="确认"
+           style="@style/FullBtnStyleSemicircle"/>
+
+
+   </LinearLayout>
+
+</com.kennyc.view.MultiStateView>

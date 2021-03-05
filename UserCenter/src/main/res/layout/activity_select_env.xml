@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.xinhuan.wms.demo.provider.widgets.HeaderBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="选择环境" />
+
+
+    <LinearLayout
+        android:id="@+id/mLayoutDev"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            style="@style/SizeMiddle.ColorLightDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_light_dark"
+            android:text="DEV" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_choice" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLayoutUat"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="1px"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            style="@style/SizeMiddle.ColorLightDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_light_dark"
+            android:text="UAT" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_choice" />
+    </LinearLayout>
+
+
+     <LinearLayout
+        android:id="@+id/mLayoutProduct"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="1px"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            style="@style/SizeMiddle.ColorLightDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_light_dark"
+            android:text="正式" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_choice" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

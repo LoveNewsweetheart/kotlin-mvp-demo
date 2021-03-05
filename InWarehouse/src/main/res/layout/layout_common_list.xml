@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kennyc.view.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mMultiView"
+    style="@style/MultiStateStyle">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRv"
+            style="@style/commonRecyclerView" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.kennyc.view.MultiStateView>

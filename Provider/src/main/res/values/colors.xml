@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#3d3d3d</color>
+    <color name="colorPrimaryProvider">#03a9f4</color>
+    <color name="colorPrimaryDark">#409EFF</color>
+    <color name="common_bg">#F2F2F2</color>
+    <color name="common_black">#000000</color>
+    <color name="common_blue">#409EFF</color>
+    <color name="common_blue_dark">#0288d1</color>
+    <color name="common_blue_light">#039be5</color>
+    <color name="common_disable">#d9d9d9</color>
+    <color name="common_divider">#EEEEEE</color>
+    <color name="common_gray">#dddddd</color>
+    <color name="common_purple">#d500f9</color>
+    <color name="common_red">#f11919</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_yellow">#FF9E36</color>
+    <color name="green_dark">#67BE90</color>
+    <color name="green_light">#DBFEE8</color>
+    <color name="yellow_light">#FEF7E1</color>
+    <color name="common_green">#67BE90</color>
+
+    <color name="text_dark">#999999</color>
+    <color name="text_light_dark">#333333</color>
+    <color name="text_normal">#666666</color>
+    <color name="transparent">#00000000</color>
+
+    <!--弹框背景蒙层颜色-->
+    <color name="color_masking_bg">#CC000000</color>
+</resources>

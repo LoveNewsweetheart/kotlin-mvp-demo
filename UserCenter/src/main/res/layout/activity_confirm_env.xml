@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xinhuan.wms.demo.provider.widgets.HeaderBar
+        android:id="@+id/mHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/mEditUrl"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="50dp"/>
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:id="@+id/mBtnConfirm"
+        android:layout_margin="@dimen/common_padding"
+        android:layout_marginTop="50dp"
+        style="@style/FullBtnStyleSemicircle"
+        android:text="确定切换"
+        />
+
+</LinearLayout>

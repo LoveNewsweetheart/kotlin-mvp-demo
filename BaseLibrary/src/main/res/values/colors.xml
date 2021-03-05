@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorPrimaryDark">#409EFF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="c00000000">@android:color/transparent</color>
+    <color name="c333333">#333333</color>
+    <color name="cF23030">#F23030</color>
+    <color name="cFB3F41">#FB3F41</color>
+    <color name="c000000">#000000</color>
+    <color name="c666666">#666666</color>
+    <color name="c999999">#999999</color>
+    <color name="cEEEEEE">#EEEEEE</color>
+    <color name="cDADBDB">#DADBDB</color>
+    <color name="cD9D9D9">#D9D9D9</color>
+    <color name="cCCCCCC">#CCCCCC</color>
+    <color name="cFF5C5D">#FF5C5D</color>
+    <color name="cFFA342">#FFA342</color>
+    <color name="cFB8585">#FB8585</color>
+    <color name="cFFC2C2">#FFC2C2</color>
+    <color name="c98C8F9">#98C8F9</color>
+    <color name="cDBFEE8">#DBFEE8</color>
+    <color name="c67BE90">#67BE90</color>
+    <color name="cFEF4D3">#FEF4D3</color>
+    <color name="cE79940">#E79940</color>
+    <color name="cD4E9FF">#D4E9FF</color>
+    <color name="cFEE1E1">#FEE1E1</color>
+</resources>

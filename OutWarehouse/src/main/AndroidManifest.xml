@@ -1,0 +1,194 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xinhuan.wms.outwarehouse">
+
+
+    <!-- 读写存储的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.OutWarehouseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!-- 整货拣货  -->
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.whole.WhBindTrayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.whole.WhCargoPlaceListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.whole.WhConfirmPickCargoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.whole.WhLackCargoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.whole.WhConfirmLayDownPlaceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.whole.WhLookTrayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!-- 散货拣货  -->
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScBindPickCarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.SelectCarTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScBindBoxActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScCargoPlaceListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScConfirmPickCargoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScPickedSkuDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScLockBoxActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScScanAddBoxActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScAddBoxConfirmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.scattered.ScLackCargoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!--  &lt;!&ndash; 容器拆分  &ndash;&gt;
+          <activity
+              android:name="com.xinhuan.wms.outwarehouse.ui.activity.cancel.ContainerSplitListActivity"
+              android:launchMode="singleTask"
+              android:screenOrientation="portrait"
+              android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+          <activity
+              android:name="com.xinhuan.wms.outwarehouse.ui.activity.cancel.ConfirmSplitActivity"
+              android:screenOrientation="portrait"
+              android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />-->
+        <!-- 订单取消  -->
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.cancel.BackOutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.cancel.ContainerDetailListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.cancel.ConfirmBackOutGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+
+        <!--  &lt;!&ndash; 异常拣货  &ndash;&gt;
+          <activity
+              android:name="com.xinhuan.wms.outwarehouse.ui.activity.unusual.UuConfirmPickCargoActivity"
+              android:screenOrientation="portrait"
+              android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+          <activity
+              android:name="com.xinhuan.wms.outwarehouse.ui.activity.unusual.UuScanTrayActivity"
+              android:screenOrientation="portrait"
+              android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+          <activity
+              android:name="com.xinhuan.wms.outwarehouse.ui.activity.unusual.UuCargoPlaceListActivity"
+              android:screenOrientation="portrait"
+              android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+  -->
+
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.load.TruckLoadingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!--选择补货任务类型-->
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.expand.SelectExpandTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+
+        <!-- 散货落放  -->
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.sclay.ScAddLayBoxActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.sclay.ScScanBoxLayPlaceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!--补货任务列表-->
+        <activity
+            android:name="com.xinhuan.wms.outwarehouse.ui.activity.expand.ExpandTaskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!--补货任务：扫描页面-->
+        <activity
+            android:name=".ui.activity.expand.ExpandScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!--补货任务：下架商品-->
+        <activity
+            android:name=".ui.activity.expand.ExpandUnderShelvesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <!--补货任务：上架商品-->
+        <activity
+            android:name=".ui.activity.expand.ExpandAboveShelvesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <!-- ==================== 容器位转移 ================ -->
+        <activity
+            android:name=".ui.activity.container.ContainerPlaceTransferScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.container.ContainerPlaceTransferRemoveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.container.ContainerPlaceTransferAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+    </application>
+
+
+</manifest>

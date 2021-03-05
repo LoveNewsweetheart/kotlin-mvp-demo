@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mFlContainer"
+        style="@style/MatchAuto" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/common_divider"/>
+    <RadioGroup
+        android:id="@+id/mRg"
+        style="@style/MatchMatch.Horizontal"
+        android:layout_height="53dp">
+
+        <RadioButton
+            android:id="@+id/mRbTaskList"
+            style="@style/AutoMatch"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_task_list"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="任务列表"
+            android:textColor="@drawable/selector_main_tab_text_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/mRbTaskPlatform"
+            style="@style/AutoMatch"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_platform"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="工作台"
+            android:textColor="@drawable/selector_main_tab_text_color"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</LinearLayout>

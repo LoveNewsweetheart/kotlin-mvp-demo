@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TaskLabelStyle">
+        <item name="android:textSize">@dimen/text_middle_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <!-- 筛选弹框动画 -->
+    <style name="AnimFilter" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/filter_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/filter_anim_out</item>
+    </style>
+
+
+</resources>

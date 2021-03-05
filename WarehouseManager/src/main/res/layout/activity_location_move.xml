@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xinhuan.wms.demo.provider.widgets.HeaderBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="货位转移"/>
+
+
+    <ImageView
+        android:id="@+id/mIvPhoto"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:background="#ffee11"
+        android:layout_height="80dp"/>
+
+
+    <Button
+        android:id="@+id/mBtnLookBig"
+        style="@style/FullBtnStyleSemicircle"
+        android:layout_width="match_parent"
+        android:layout_margin="50dp"
+        android:text="查看大图"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

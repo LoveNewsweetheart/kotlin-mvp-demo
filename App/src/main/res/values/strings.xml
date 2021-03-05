@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SweetheartDemo</string>
+    <string name="application_id">com.xinhuan.wms.pda</string>
+
+    <string name="app_name_debug">SweetheartDemo测试版</string>
+    <string name="application_id_debug">com.xinhuan.wms.pda.debug</string>
+
+    <string name="app_name_uat">SweetheartDemo-uat版</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- HeaderBar自定义属性 -->
+    <declare-styleable name="HeaderBar">
+        <attr name="isShowBack" format="boolean"/>
+        <attr name="titleText" format="string"/>
+        <attr name="rightText" format="string"/>
+    </declare-styleable>
+
+    <!-- LabelText自定义属性 -->
+    <declare-styleable name="LabelText">
+        <attr name="labelText" format="string"/>
+        <attr name="contentText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScanInputLayout">
+        <!-- editText的hint属性-->
+       <attr name="editHint" format="string"/>
+        <!--是否自带有边距-->
+       <attr name="isHavePadding" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -14,9 +14,9 @@
         android:padding="@dimen/common_padding">
 
         <LinearLayout
-            android:layout_marginTop="13dp"
             style="@style/MatchWrap.Horizontal"
             android:layout_height="@dimen/login_input_height"
+            android:layout_marginTop="13dp"
             android:background="@drawable/border_corner_all"
             android:gravity="center_vertical">
 
@@ -31,18 +31,18 @@
                 android:layout_marginLeft="@dimen/common_padding_big"
                 android:background="#00000000"
                 android:gravity="center_vertical"
+                android:hint="请输入账号"
                 android:maxLength="20"
                 android:singleLine="true"
-                android:hint="请输入账号"
                 android:textColorHint="#CCCCCC" />
 
             <ImageView
                 android:id="@+id/mIvCleanAccount"
                 style="@style/WrapMatch"
-                android:visibility="gone"
                 android:paddingLeft="@dimen/common_padding"
                 android:paddingRight="@dimen/common_padding_big"
-                android:src="@drawable/delete_input" />
+                android:src="@drawable/delete_input"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -65,30 +65,30 @@
                 android:layout_marginLeft="@dimen/common_padding_big"
                 android:background="#00000000"
                 android:gravity="center_vertical"
-                android:inputType="numberPassword|number"
                 android:hint="请输入密码"
-                android:singleLine="true"
+                android:inputType="numberPassword|number"
                 android:maxLength="20"
+                android:singleLine="true"
                 android:textColorHint="#CCCCCC" />
 
             <ImageView
                 android:id="@+id/mIvCleanPwd"
                 style="@style/WrapMatch"
-                android:visibility="gone"
                 android:paddingLeft="@dimen/common_padding"
                 android:paddingRight="@dimen/common_padding_big"
-                android:src="@drawable/delete_input" />
+                android:src="@drawable/delete_input"
+                android:visibility="gone" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:visibility="gone"
             android:id="@+id/mLlSelectWarehouse"
             style="@style/MatchWrap.Horizontal"
             android:layout_height="@dimen/login_input_height"
             android:layout_marginTop="13dp"
             android:background="@drawable/border_corner_all"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:visibility="gone">
 
             <TextView
                 style="@style/WrapWrap.SizeMiddle.ColorNormal"
@@ -100,10 +100,10 @@
                 style="@style/AutoWrap.SizeMiddle.ColorNormal"
                 android:layout_marginLeft="@dimen/common_padding_big"
                 android:background="#00000000"
-                android:focusableInTouchMode="false"
                 android:focusable="false"
-                android:textColor="@color/text_light_dark"
+                android:focusableInTouchMode="false"
                 android:gravity="center_vertical"
+                android:textColor="@color/text_light_dark"
                 android:textColorHint="#CCCCCC" />
 
             <ImageView
@@ -117,29 +117,29 @@
 
 
         <FrameLayout
-            android:layout_marginTop="@dimen/common_padding_large"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_large">
 
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/mCbRememberAccount"
                 style="@style/WrapWrap.SizeSmall.ColorNormal"
-                android:paddingLeft="@dimen/common_padding_big"
-                android:drawablePadding="10dp"
-                android:textSize="@dimen/text_middle_size"
                 android:button="@null"
-                android:drawableLeft="@drawable/selector_check_box"
                 android:checked="true"
+                android:drawableLeft="@drawable/selector_check_box"
+                android:drawablePadding="10dp"
+                android:paddingLeft="@dimen/common_padding_big"
+                android:text="记住账号"
                 android:textColor="@color/text_light_dark"
-                android:text="记住账号" />
+                android:textSize="@dimen/text_middle_size" />
 
             <TextView
                 android:id="@+id/mTvFindPwd"
-                android:visibility="invisible"
-                android:paddingRight="20dp"
                 style="@style/WrapWrap.SizeSmall.ColorNormal"
                 android:layout_gravity="right"
-                android:text="找回密码" />
+                android:paddingRight="20dp"
+                android:text="找回密码"
+                android:visibility="invisible" />
         </FrameLayout>
 
 
@@ -150,7 +150,6 @@
             android:layout_marginTop="21dp"
             android:enabled="true"
             android:text="登录" />
-
 
 
     </LinearLayout>

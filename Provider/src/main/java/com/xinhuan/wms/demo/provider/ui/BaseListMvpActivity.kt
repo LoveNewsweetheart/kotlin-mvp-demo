@@ -224,7 +224,7 @@ abstract class BaseListMvpActivity<E, P : BaseListPresenter<E, V>, V : BaseListV
 
 
 
-    protected fun showErrorMsg(text: String, status:Int){
+    open fun showErrorMsg(text: String, status:Int){
         toast(text)
     }
 

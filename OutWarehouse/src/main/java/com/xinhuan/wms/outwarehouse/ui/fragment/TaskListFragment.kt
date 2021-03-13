@@ -66,11 +66,16 @@ class TaskListFragment : BaseListMvpFragment<TaskEntity, TaskListPresenter, IGet
 
     }
 
-
-
-
     override fun onItemClick(adapter: BaseQuickAdapter<*, *>, view: View, position: Int) {
         toast("点击了$position")
     }
+
+//    /**
+//     * 如果你对错误信息提示需要更多的处理
+//     * 可以重写该方法，覆盖父类默认的toast提示
+//     */
+//    override fun showErrorMsg(text: String, status:Int){
+//        //在这里处理错误提示
+//    }
 
 }

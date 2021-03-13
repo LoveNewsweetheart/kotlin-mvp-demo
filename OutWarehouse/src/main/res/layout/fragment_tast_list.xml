@@ -6,6 +6,7 @@
     android:background="@color/common_bg"
     android:orientation="vertical">
 
+    <!--自定义title-->
     <com.xinhuan.wms.demo.provider.widgets.HeaderBar
         android:id="@+id/mHeaderBar"
         android:layout_width="match_parent"
@@ -14,5 +15,7 @@
         app:rightText="右侧按钮"
         app:titleText="出库任务列表" />
 
+    <!--这里提供了通用的布局-->
     <include layout="@layout/layout_common_list"/>
+
 </LinearLayout>

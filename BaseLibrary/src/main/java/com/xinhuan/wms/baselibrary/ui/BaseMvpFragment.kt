@@ -61,7 +61,7 @@ abstract class BaseMvpFragment<P : BasePresenter<V>, V : BaseView> : BaseFragmen
         mLoadingDialog.hideLoading()
     }
 
-    protected fun showErrorMsg(text: String, status:Int){
+    open fun showErrorMsg(text: String, status:Int){
         activity?.toast(text)
     }
 }

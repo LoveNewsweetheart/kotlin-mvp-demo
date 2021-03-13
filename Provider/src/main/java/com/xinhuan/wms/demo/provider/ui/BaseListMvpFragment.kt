@@ -226,7 +226,7 @@ abstract class BaseListMvpFragment<E, P : BaseListPresenter<E, V>, V : BaseListV
     protected abstract fun getV():V
 
 
-    protected fun showErrorMsg(text: String, status:Int){
+    open fun showErrorMsg(text: String, status:Int){
         toast(text)
     }
 

@@ -34,6 +34,27 @@ class TaskListPresenter : BaseListPresenter<TaskEntity, IGetTaskListView>() {
             }, lifecycleProvider)
     }
 
+//    override fun getListData(params: HashMap<String, Any>) {
+//        if (!checkRequestListNetWork()) {
+//            return
+//        }
+//
+//        OutWarehouseService().getTaskList(params)
+//            .execute(object : BaseObserverWithRefresh<ListTaskEntity>(mView) {
+//                override fun onNext(t: ListTaskEntity) {
+//                    super.onNext(t)
+//                    mView.onGetListResult(t.data, t.page)
+//                }
+//
+//                //默认已经处理了错误信息，但是如果当需要对错误信息额外做一些特殊的处理时，可以在这里回调给Activity做处理
+//                override fun onError(e: Throwable) {
+//                    super.onError(e)
+//                    mView.onGetTestError()
+//                }
+//
+//            }, lifecycleProvider)
+//    }
+
 
     /**
      * 如果你的界面虽然是一个列表页面，但是你的页面中也有其他的接口需要调用，那么你可以在这里继续写你的其他接口
